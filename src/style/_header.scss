@@ -1,0 +1,85 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%; 
+    z-index: 2;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+
+    input[type=checkbox] {
+        display: none;
+    }
+    
+    &__heading {
+    font-family: $source_font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing : 0.1em;
+    text-transform : uppercase;
+    color: $white_color;
+
+    }
+
+    .toggle {
+        order: 3;
+    }
+
+    .nav__menu {
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        font-family: normal;
+        order: 2;
+
+        & a {
+            font-family: $source_font;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+            color: $white_color;
+            letter-spacing: 0.2em;
+            padding: 6px;
+            margin: 0px 30px;
+            transition: 0.3s;
+            cursor: pointer;
+            }
+
+        #about {
+            border-bottom: 3px solid $white_color;
+            &:hover {
+                transform: scale(1.1) ;
+                filter: grayscale(0);
+           }
+        }
+     &-item { 
+        &:hover {
+            transform: scale(1.1) ;
+            filter: grayscale(0);
+       }
+       &-item__stories{
+        &:hover {
+            transform: scale(1.1) ;
+            filter: grayscale(0)
+       }
+
+       }
+       &-item__contact{
+        &:hover {
+            transform: scale(1.1) ;
+            filter: grayscale(0)
+       }
+
+       }
+}
+    }
+}

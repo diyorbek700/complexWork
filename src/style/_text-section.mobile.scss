@@ -1,0 +1,11 @@
+@media screen  and (max-width:768px){
+    .main_2{
+        &_text {
+            flex-direction: column;
+
+            p {
+                padding: 20px 10px;
+            }
+        }
+    }
+}
